@@ -1,0 +1,24 @@
+@import 'abstract/variables'
+@import 'abstract/animations'
+@import 'abstract/mixins'
+@import 'base/base'
+@import 'base/typography'
+@import 'components/navbar'
+@import 'components/header'
+@import 'components/card'
+@import 'components/slider'
+@import 'components/footer'
+@import 'layout/main'
+@import 'pages/home'
+
+.app
+    min-height: 100vh
+    background-color: #070707
+    // background: linear-gradient(to left, #232526, #414345)
+
+    display: flex
+    flex-direction: column
+    // align-items: center
+
+    & , *
+        transition: .2s

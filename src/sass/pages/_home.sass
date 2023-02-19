@@ -1,0 +1,27 @@
+.title
+    margin-right: auto
+    padding: 1rem 0
+
+    font-weight: bold
+    font-size: 2rem
+
+.cards
+    display: grid
+    grid-template-columns: auto repeat(4, 1fr)
+    gap: 2rem
+    
+    & .card:hover
+        img
+            transform: scale(1.05)
+
+    @include respond(tab-land)
+        grid-template-columns: repeat(3, 1fr)
+
+    @include respond(tab-port)
+        grid-template-columns: repeat(2, 1fr)
+
+    @include respond(phone)
+        grid-template-columns: 1fr
+    
+
+        
